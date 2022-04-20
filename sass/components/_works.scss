@@ -1,6 +1,6 @@
 .works{
     background-color: var(--white-color);
-    padding-top: 94px;
+    // padding-top: 94px;
     padding-bottom: 94px;
     &__title {
       margin-bottom: 50px;
@@ -14,6 +14,9 @@
     }
     &__list{
       display: flex;
+    }
+    @media  screen and (max-width:1199px) {
+      display: none;
     }
   }
     
@@ -36,11 +39,11 @@
      text-align: center;
      padding-top: 27px;
      padding-bottom: 27px;
-     font-family: 'Roboto';
-     font-style: normal;
+     font-family: 'Roboto', sans-serif;
+    //  font-style: normal;
      font-weight: 700;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16.41/14);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
