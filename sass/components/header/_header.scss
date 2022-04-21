@@ -45,6 +45,13 @@
       }
    }
 
+   .menu-open-svg,
+   .menu-close-svg{
+      &:hover, &:focus{
+         fill: var(--accent-color);
+      }
+   }
+
    // .menu-close-button{
    //    position: absolute;
    //    top: 25px;
@@ -196,26 +203,6 @@ letter-spacing: 0.02em;
 
 
 
-   .current{
-      @media screen and (max-width:767px) {
-         display: none;
-      }
-    position:relative;
-    &::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: -33px;
-    left: 0;
-    background: #2196F3;
-    border-radius: 2px;
-
-    
-    }
-    }
-    
-    
    
     
   
