@@ -1,4 +1,6 @@
 .footer-contact__list {
+  
+  
   margin-top: 20px;
   &-address,
   &-mail,
@@ -9,15 +11,28 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   
+  
   }
   &-item:not(:last-child){
     margin-bottom: 9px;
   }
+  @media screen and (min-width:1200px) {
+    width: 231px;
+}
 }
 .footer-contact__list-address {
   color: var(--white-color);
   font-style: normal;
 }
 
+
+.footer-contact__list{
+  @media screen and (max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+}
 
 

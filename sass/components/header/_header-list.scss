@@ -1,4 +1,10 @@
 .menu-list {
+  margin-left: 88px;
+  @media screen and (max-width:767px) {
+    &{
+      display: none;
+    }
+  }
     display: flex;
     &__link{
         font-weight: 500;

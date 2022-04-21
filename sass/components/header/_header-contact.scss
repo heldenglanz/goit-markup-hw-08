@@ -1,4 +1,11 @@
 .contact{
+  
+ 
+  @media screen and (max-width:1199px) {
+    display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -13,6 +20,10 @@
       line-height: 1.14;
       letter-spacing: 0.02em;
       transition-property:color;
+
+      @media screen and (max-width:767px) {
+        display: none;
+      }
     }
     &__mail-icon,
     &__tel-icon{
@@ -24,7 +35,9 @@
   }
 
   .contact__mail{
-    margin-right: 50px;
+    @media screen and (min-width:1200px) {
+      margin-right: 50px;
+    }
     &:hover,
     &:focus{
       color: var(--accent-color);
@@ -32,10 +45,14 @@
      
      fill: var(--accent-color);
     }
+   
   }
   }
   .contact__tel{
-  
+  margin-right: auto;
+  @media screen and (max-width:1199px) {
+    margin-top: 10px;
+  }
     &:hover,
     &:focus{
       color: var(--accent-color);

@@ -1,7 +1,30 @@
 .footer-social{
-    margin-left: 70px;
+
+    @media screen and (max-width:767px){
+        margin-top: 60px;
+    }
+
+
+
+
+    @media screen and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        
+        // margin-top: 60px;
+      }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
     margin-top: 12px;
     height: 80px;
+    width: 206px;
+    }
+
+
+   
+   
+    
     &__title{
         display: block;
         font-family: 'Roboto', sans-serif;
@@ -14,6 +37,12 @@
        color: #FFFFFF;
       letter-spacing: 0.03em;
       margin-bottom: 20px;
+
+
+      @media screen and (max-width:1199px){
+          text-align: center;
+      }
+
       }
   }
   

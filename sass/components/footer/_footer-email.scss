@@ -1,43 +1,106 @@
 .footer-email{
-    position: relative;
-    margin-top: 12px;
-   margin-left: 93px;
-    height: 86px;
-    margin-bottom: 94px;
-    width: 570px;
+
+  // position: relative;
+  margin-top: 12px;
+//  margin-left: 93px;
+  // height: 86px;
+  // margin-bottom: 94px;
+  // width: 570px;
+
+  @media screen and (max-width:1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    margin-top: 60px;
   }
+  @media screen and (min-width:1200px) {
+     position: relative;
+    width: 570px;
+    margin-left: 93px;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: stretch;
+}
+
+  
+  }
+   
+
+
+
+  
   .footer-email__label{
     display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16/14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+
+  @media screen and (max-width:1199px){
+    text-align: center;
+}
   }
+
+
   .footer-email__input{
     padding: 20px;
     margin-top: 20px;
-    position: absolute;
+   
     color: #FFFFFF;
-   top: 100%;
-    left: 0;
+   
     height: 50px;
-    width: 358px;
+   width: 100%;
+
+
+
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+
+     @media screen and (min-width:480px) {
+       
+     }
+
+
+
+
+
+    @media screen and (min-width:768px) {
+      // width: 450px;
+      // margin-left: 152px;
+      // margin-right: 152px;
+    }
+    @media screen and (min-width:1200px){
+     width: 358px;
+    //  position: absolute;
+    //  bottom: 50%;
+    //  left: 0;
+    }
+
+
   }
   .footer-email__btn{
+    &-telegram{
+      margin-left: 10px; 
+   }
+    @media screen and (max-width:1199px){
+      margin-top: 20px;
+    }
+    @media screen and (min-width:1200px){
+
+    
     position: absolute;
-    bottom: 0;
+    bottom: 34%;
     right: 0;
     margin-left: 12px;
      &-telegram{
         margin-left: 10px; 
      }
   }
- 
+}
