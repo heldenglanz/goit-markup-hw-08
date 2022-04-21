@@ -132,6 +132,12 @@ ul {
   color: var(--white-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-header {
+    margin-right: 0px;
+  }
+}
+
 .header {
   background-color: var(--white-color);
   padding-top: 25px;
@@ -151,15 +157,21 @@ ul {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header .container {
+    justify-content: space-between;
+  }
+}
+
 .menu-open-button,
 .menu-close-button {
   position: absolute;
   top: 10px;
   right: 15px;
+  margin-left: auto;
   background-color: #fff;
   display: block;
   border: none;
-  margin-left: auto;
 }
 
 .menu-open-button:hover, .menu-open-button:focus,
@@ -605,6 +617,13 @@ ul {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .team__title {
   margin-bottom: 30px;
   text-align: center;
@@ -833,6 +852,7 @@ ul {
 }
 
 .footer-contact__list-address, .footer-contact__list-mail, .footer-contact__list-tel {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -1023,8 +1043,15 @@ ul {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-menu {
@@ -1076,13 +1103,12 @@ ul {
   .project {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
     justify-content: space-between;
   }
 }
 
 .project__item {
+  width: 354px;
   border: 1px solid #EEEEEE;
   cursor: pointer;
   transition-property: box-shadow;
@@ -1173,11 +1199,17 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__title {
@@ -1277,6 +1309,13 @@ ul {
   outline: none;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal__comment {
+    font-size: 12px;
+    line-height: calc(14/12);
+  }
+}
+
 .modal__comment::placeholder {
   font-size: 14px;
   line-height: 16px;
@@ -1291,6 +1330,13 @@ ul {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--second-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__check-text {
+    font-size: 12px;
+    line-height: calc(14/12);
+  }
 }
 
 .modal__check-text::before {
