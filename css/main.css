@@ -979,7 +979,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .footer-email__btn {
     position: absolute;
-    bottom: 34%;
+    bottom: 33%;
     right: 0;
     margin-left: 12px;
   }
